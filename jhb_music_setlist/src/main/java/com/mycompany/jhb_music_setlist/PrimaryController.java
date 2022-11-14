@@ -232,7 +232,7 @@ public class PrimaryController implements Initializable {
             errorLista.setVisible(true);
         } else {
             errorLista.setVisible(false);
-            if (songName.getText().equalsIgnoreCase("")) {
+            if (songName.getText().equalsIgnoreCase("")|| songArtist.getText().equalsIgnoreCase("")) {
                 errorInsert.setVisible(true);
             } else {
                 errorInsert.setVisible(false);
@@ -252,7 +252,7 @@ public class PrimaryController implements Initializable {
     //BORRADO DE CANCIONES
     @FXML
     private void deleteSong() {
-        if(delName.getText().equalsIgnoreCase("")){
+        if(delName.getText().equalsIgnoreCase("") || delArtist.getText().equalsIgnoreCase("")){
             errorDel.setVisible(true);
         }else{
         borrarCancion(con, lists.getValue(), delName.getText(), delArtist.getText());
@@ -285,12 +285,14 @@ public class PrimaryController implements Initializable {
     //MODIFICACIÓN
     @FXML
     private void modifySong() {
-        if (newName.getText().equalsIgnoreCase("")) {
+        if (newName.getText().equalsIgnoreCase("")|| newArtist.getText().equalsIgnoreCase("")) {
             errorMod.setVisible(true);
         } else {
+            errorMod.setVisible(false);
             modificarCancion(con, lists.getValue(), modName.getText(), modArtist.getText(), newName.getText(),
                     newArtist.getText(), newAlbum.getText(), newYear.getText(), newGenre.getValue());
             cerrarMod();
+            cerrarModPrev();
             fillTabla();
         }
     }  //CON ESTE HACEMOS LA MODIFICACIÓN DE LA CANCIÓN
@@ -312,7 +314,7 @@ public class PrimaryController implements Initializable {
 
     @FXML
     private void modSong() {
-        if (modName.getText().equalsIgnoreCase("")) {
+        if (modName.getText().equalsIgnoreCase("")|| modArtist.getText().equalsIgnoreCase("")) {
             errorModPrev.setVisible(true);
         } else {
             ventanaMod.setVisible(true);

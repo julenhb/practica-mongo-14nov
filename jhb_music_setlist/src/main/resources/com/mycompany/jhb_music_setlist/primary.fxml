@@ -166,7 +166,7 @@
                   <Font name="Franklin Gothic Medium" size="14.0" />
                </font>
             </Button>
-            <Label fx:id="errorDel" alignment="CENTER" layoutX="140.0" layoutY="201.0" prefHeight="26.0" prefWidth="249.0" text="El nombre no puede ser nulo" textFill="#b8b31d" visible="false">
+            <Label fx:id="errorDel" alignment="CENTER" layoutX="78.0" layoutY="200.0" prefHeight="26.0" prefWidth="370.0" text="NOMBRE Y ARTISTA NO PUEDEN ESTAR VACÍOS" textFill="#b8b31d" visible="false">
                <font>
                   <Font name="Franklin Gothic Medium" size="18.0" />
                </font>
@@ -208,7 +208,7 @@
                   <Font name="Franklin Gothic Medium" size="14.0" />
                </font>
             </Button>
-            <Label fx:id="errorModPrev" alignment="CENTER" layoutX="127.0" layoutY="200.0" prefHeight="26.0" prefWidth="272.0" text="El nombre no puede ser nulo" textFill="#b8b31d" visible="false">
+            <Label fx:id="errorModPrev" alignment="CENTER" layoutX="82.0" layoutY="199.0" prefHeight="26.0" prefWidth="370.0" text="NOMBRE Y ARTISTA NO PUEDEN ESTAR VACÍOS" textFill="#b8b31d" visible="false">
                <font>
                   <Font name="Franklin Gothic Medium" size="18.0" />
                </font>
@@ -282,7 +282,7 @@
                   <Font name="Franklin Gothic Medium" size="14.0" />
                </font>
             </Button>
-            <Label fx:id="errorMod" layoutX="247.0" layoutY="294.0" prefHeight="26.0" prefWidth="254.0" text="El nombre no puede ser nulo" textFill="#b8ad1d" visible="false">
+            <Label fx:id="errorMod" layoutX="209.0" layoutY="294.0" prefHeight="26.0" prefWidth="370.0" text="NOMBRE Y ARTISTA NO PUEDEN ESTAR VACÍOS" textFill="#b8ad1d" visible="false">
                <font>
                   <Font name="Franklin Gothic Medium" size="18.0" />
                </font>
@@ -294,7 +294,7 @@
             <Font name="Franklin Gothic Medium" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="errorInsert" layoutX="342.0" layoutY="238.0" text="NO PUEDES DEJAR EL NOMBRE DE LA CANCIÓN VACÍO" textFill="#f8e800" visible="false">
+      <Label fx:id="errorInsert" layoutX="342.0" layoutY="238.0" text="NOMBRE Y ARTISTA NO PUEDEN ESTAR VACÍOS" textFill="#f8e800" visible="false">
          <font>
             <Font name="Franklin Gothic Medium" size="14.0" />
          </font>
