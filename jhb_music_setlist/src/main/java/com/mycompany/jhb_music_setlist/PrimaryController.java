@@ -198,6 +198,7 @@ public class PrimaryController implements Initializable {
 
         tabla.setItems(fillArrayTabla(con, lists.getValue()));
         logoBright.setVisible(true);
+        errorLista.setVisible(false);
 
     }
 
